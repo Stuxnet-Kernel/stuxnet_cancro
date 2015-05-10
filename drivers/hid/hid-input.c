@@ -362,7 +362,6 @@ static int hidinput_get_battery_property(struct power_supply *psy,
 
 		if (ret != 2) {
 			ret = -ENODATA;
-			kfree(buf);
 			break;
 		}
 		ret = 0;
